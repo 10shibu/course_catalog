@@ -1,24 +1,11 @@
-# README
+# Course Catalog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Brandeis university data is formatted in JSON
 
-Things you may want to cover:
+This app will have features as below:
 
-* Ruby version
+* User : Add, Update, Delete
 
-* System dependencies
+* Courses: Add, Update, Delete
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Instructors: Add, Update, Delete
