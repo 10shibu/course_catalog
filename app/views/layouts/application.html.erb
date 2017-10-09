@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CourseCatalog</title>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--%= javascript_include_tag "application" %-->
+  </head>
+
+  <body>
+    <!--%= yield %-->
+    <div id="main-container" class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <% flash.each do |name, msg| -%>
+            <%= content_tag :div, msg, class: "alert alert-#{name}" %>
+          <% end -%>
+        </div>
+      </div>
+
+            <h3>Course Catalog</h3>
+            <div class="btn-group btn-group-justified">
+                 <%= link_to 'Instructors', controller: 'instructors', class: 'btn btn-success' %>
+                 <%= link_to 'Subjects', controller: 'subjects' %>
+                 <%= link_to 'Home', controller: 'welcome' %>
+                 <%= link_to 'Courses', controller: 'courses' %>
+            </div>
+
+          <%= yield %>
+    </div>
+  </body>
+</html>
